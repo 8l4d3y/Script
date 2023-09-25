@@ -1,0 +1,2 @@
+# Script
+shity scripts
