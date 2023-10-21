@@ -1,0 +1,18 @@
+local replicated = game:GetService('ReplicatedStorage')
+
+local function invokeStatFunction()
+	replicated.RSPackage.Events.StatFunction:InvokeServer('Stat', 'Durability')
+end
+
+coroutine.wrap(function()
+	for i = 1,7000 do
+		task.spawn(invokeStatFunction)
+	end
+end)()
+
+for i = 1,2500 do
+	for i = 1,2500 do
+		for i = 1,2500 do
+		end
+	end
+end
